@@ -19,6 +19,12 @@ const bscMainnet: NetworkUserConfig = {
   accounts: [process.env.KEY_MAINNET!],
 };
 
+const polygonTestnet: NetworkUserConfig = {
+  url: `${process.env.POLYGON_TESTNET_RPC}`,
+  chainId: 80001,
+  accounts: [process.env.KEY_TESTNET!],
+};
+
 const config: HardhatUserConfig = {
   solidity: {
     version: "0.6.12",
@@ -159,6 +165,7 @@ const config: HardhatUserConfig = {
     },
     tbsc: bscTestnet,
     bsc: bscMainnet,
+    tpolygon: polygonTestnet,
   },
   gasReporter: {
     enabled: process.env.REPORT_GAS !== undefined,
