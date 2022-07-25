@@ -1,0 +1,9 @@
+{
+    "tbsc": {
+        "admin": "0x50Dc231Cfc065d6F2ebAF310f0252dA095ABFAa9",
+        "taxRecipient": "0x50Dc231Cfc065d6F2ebAF310f0252dA095ABFAa9",
+        "NFTMarketplace": "0x2f8bc6B185279B483f588dad84221317e8DfD98A",
+        "mockErc20": "0x78066f8Ee6C7dca796417e059bB03099c4D238EF",
+        "mockErc721": "0xB0aDbd2B6AA3b08E153d2f7B8cbC2F0DcCcD4416"
+    }
+}
