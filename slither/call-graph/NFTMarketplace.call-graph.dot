@@ -1,0 +1,269 @@
+strict digraph {
+subgraph cluster_2561_ContextUpgradeable {
+label = "ContextUpgradeable"
+"2561___Context_init_unchained" [label="__Context_init_unchained"]
+"2561__msgSender" [label="_msgSender"]
+"2561__msgData" [label="_msgData"]
+"2561___Context_init" [label="__Context_init"]
+"2561___Context_init" -> "2561___Context_init_unchained"
+"2561___Context_init_unchained" -> "2561_initializer"
+"2561___Context_init" -> "2561_initializer"
+}subgraph cluster_2156_IERC721ReceiverUpgradeable {
+label = "IERC721ReceiverUpgradeable"
+"2156_onERC721Received" [label="onERC721Received"]
+}subgraph cluster_815_Initializable {
+label = "Initializable"
+"815__isConstructor" [label="_isConstructor"]
+}subgraph cluster_307_AccessControlUpgradeable {
+label = "AccessControlUpgradeable"
+"307_getRoleAdmin" [label="getRoleAdmin"]
+"307_revokeRole" [label="revokeRole"]
+"307_renounceRole" [label="renounceRole"]
+"307__setupRole" [label="_setupRole"]
+"307__setRoleAdmin" [label="_setRoleAdmin"]
+"307___AccessControl_init_unchained" [label="__AccessControl_init_unchained"]
+"307_grantRole" [label="grantRole"]
+"307_getRoleMember" [label="getRoleMember"]
+"307__revokeRole" [label="_revokeRole"]
+"307__grantRole" [label="_grantRole"]
+"307_getRoleMemberCount" [label="getRoleMemberCount"]
+"307_hasRole" [label="hasRole"]
+"307___AccessControl_init" [label="__AccessControl_init"]
+"307___AccessControl_init" -> "307___AccessControl_init_unchained"
+"307___AccessControl_init_unchained" -> "307_initializer"
+"307___AccessControl_init" -> "307_initializer"
+"307_grantRole" -> "307_hasRole"
+"307_revokeRole" -> "307_hasRole"
+"307__revokeRole" -> "307__msgSender"
+"307_grantRole" -> "307__grantRole"
+"307___AccessControl_init" -> "307___Context_init_unchained"
+"307_revokeRole" -> "307__revokeRole"
+"307_renounceRole" -> "307__revokeRole"
+"307__setupRole" -> "307__grantRole"
+"307__grantRole" -> "307__msgSender"
+"307_renounceRole" -> "307__msgSender"
+"307_grantRole" -> "307__msgSender"
+"307_revokeRole" -> "307__msgSender"
+}subgraph cluster_12478_NFTMarketplace {
+label = "NFTMarketplace"
+"12478__addPackListing" [label="_addPackListing"]
+"12478__changeListingDetail" [label="_changeListingDetail"]
+"12478_offerListing" [label="offerListing"]
+"12478__tokenNotBanned" [label="_tokenNotBanned"]
+"12478__isNotListedOnPack" [label="_isNotListedOnPack"]
+"12478_allowToken" [label="allowToken"]
+"12478_setDefaultTax" [label="setDefaultTax"]
+"12478_onERC721Received" [label="onERC721Received"]
+"12478_getAllowedTokenTypes" [label="getAllowedTokenTypes"]
+"12478_cancelPackListing" [label="cancelPackListing"]
+"12478_getListedTokenTypes" [label="getListedTokenTypes"]
+"12478_getFinalPrice" [label="getFinalPrice"]
+"12478_changeListingDetail" [label="changeListingDetail"]
+"12478_setTaxRecipient" [label="setTaxRecipient"]
+"12478_setDefaultTaxAsPercent" [label="setDefaultTaxAsPercent"]
+"12478_getPackSellerCurrency" [label="getPackSellerCurrency"]
+"12478__isAllowedCurrency" [label="_isAllowedCurrency"]
+"12478_changePackListingDetail" [label="changePackListingDetail"]
+"12478__isListedOnPack" [label="_isListedOnPack"]
+"12478_getPackSellerPrice" [label="getPackSellerPrice"]
+"12478_disallowToken" [label="disallowToken"]
+"12478_getNumberOfListingsForToken" [label="getNumberOfListingsForToken"]
+"12478_getPackSellerTimestamp" [label="getPackSellerTimestamp"]
+"12478__setTaxOnTokenType" [label="_setTaxOnTokenType"]
+"12478__clearOffers" [label="_clearOffers"]
+"12478_getOfferTax" [label="getOfferTax"]
+"12478_getSellerOfNftID" [label="getSellerOfNftID"]
+"12478_setUserBan" [label="setUserBan"]
+"12478_acceptOfferListing" [label="acceptOfferListing"]
+"12478_getSellerPrice" [label="getSellerPrice"]
+"12478_getPackListingIDsBySeller" [label="getPackListingIDsBySeller"]
+"12478_getOfferersByOrder" [label="getOfferersByOrder"]
+"12478__addListing" [label="_addListing"]
+"12478_defaultTaxAsRoundedPercentRoughEstimate" [label="defaultTaxAsRoundedPercentRoughEstimate"]
+"12478__isNotListed" [label="_isNotListed"]
+"12478_getListingIDs" [label="getListingIDs"]
+"12478__isValidTime" [label="_isValidTime"]
+"12478__isPackSellerOrAdmin" [label="_isPackSellerOrAdmin"]
+"12478_setTaxOnTokenType" [label="setTaxOnTokenType"]
+"12478_purchaseListing" [label="purchaseListing"]
+"12478_getPackListingIDs" [label="getPackListingIDs"]
+"12478__checkRequirementsAndPerformOffer" [label="_checkRequirementsAndPerformOffer"]
+"12478_cancelOffer" [label="cancelOffer"]
+"12478__isPackListed" [label="_isPackListed"]
+"12478_allowCurrency" [label="allowCurrency"]
+"12478_addListing" [label="addListing"]
+"12478_cancelListing" [label="cancelListing"]
+"12478_getNumberOfListingsBySeller" [label="getNumberOfListingsBySeller"]
+"12478_getSellerOfPackID" [label="getSellerOfPackID"]
+"12478__isSellerOrAdmin" [label="_isSellerOrAdmin"]
+"12478_getNumberOfPackListingsBySeller" [label="getNumberOfPackListingsBySeller"]
+"12478_setUserBans" [label="setUserBans"]
+"12478_getOfferDetail" [label="getOfferDetail"]
+"12478__isListed" [label="_isListed"]
+"12478_getIsEnableOffering" [label="getIsEnableOffering"]
+"12478__isPackSeller" [label="_isPackSeller"]
+"12478_getPackFinalPrice" [label="getPackFinalPrice"]
+"12478_getListingIDsBySeller" [label="getListingIDsBySeller"]
+"12478_getSellerTimestamp" [label="getSellerTimestamp"]
+"12478__acceptOfferListing" [label="_acceptOfferListing"]
+"12478_setTaxOnTokenTypeAsRational" [label="setTaxOnTokenTypeAsRational"]
+"12478_setDefaultTaxAsRational" [label="setDefaultTaxAsRational"]
+"12478_slitherConstructorConstantVariables" [label="slitherConstructorConstantVariables"]
+"12478__unregisterTokenAddress" [label="_unregisterTokenAddress"]
+"12478_getTokensOnPack" [label="getTokensOnPack"]
+"12478_getPackTaxOnListing" [label="getPackTaxOnListing"]
+"12478_addPackListing" [label="addPackListing"]
+"12478_getOfferFinalPrice" [label="getOfferFinalPrice"]
+"12478_getSellerCurrency" [label="getSellerCurrency"]
+"12478__isPackNotListed" [label="_isPackNotListed"]
+"12478_purchasePackListing" [label="purchasePackListing"]
+"12478__isValidERC721" [label="_isValidERC721"]
+"12478_setTaxOnTokenTypeAsPercent" [label="setTaxOnTokenTypeAsPercent"]
+"12478__onlyNonContract" [label="_onlyNonContract"]
+"12478__updateListedTokenTypes" [label="_updateListedTokenTypes"]
+"12478_initialize" [label="initialize"]
+"12478_getNumberOfPackListingsForToken" [label="getNumberOfPackListingsForToken"]
+"12478_getTaxOnListing" [label="getTaxOnListing"]
+"12478_disallowCurrency" [label="disallowCurrency"]
+"12478__isSeller" [label="_isSeller"]
+"12478__fieldsValidation" [label="_fieldsValidation"]
+"12478_isTokenAllowed" [label="isTokenAllowed"]
+"12478__registerTokenAddress" [label="_registerTokenAddress"]
+"12478__acceptOfferListing" -> "12478_getOfferDetail"
+"12478_addPackListing" -> "12478_userNotBanned"
+"12478_cancelListing" -> "12478_isSellerOrAdmin"
+"12478_purchaseListing" -> "12478__updateListedTokenTypes"
+"12478_purchasePackListing" -> "12478_getPackFinalPrice"
+"12478_setTaxOnTokenType" -> "12478_isValidERC721"
+"12478__tokenNotBanned" -> "12478_isTokenAllowed"
+"12478_changeListingDetail" -> "12478_userNotBanned"
+"12478_changeListingDetail" -> "12478__changeListingDetail"
+"12478_purchaseListing" -> "12478_isListed"
+"12478_addListing" -> "12478_isNotListedOnPack"
+"12478_addPackListing" -> "12478_fieldsValidation"
+"12478_offerListing" -> "12478_isListed"
+"12478_acceptOfferListing" -> "12478_isListed"
+"12478_setTaxRecipient" -> "12478_restricted"
+"12478_changeListingDetail" -> "12478_isListed"
+"12478_getPackListingIDsBySeller" -> "12478_getNumberOfPackListingsBySeller"
+"12478_purchaseListing" -> "12478__clearOffers"
+"12478__fieldsValidation" -> "12478__tokenNotBanned"
+"12478_allowCurrency" -> "12478_restricted"
+"12478_purchasePackListing" -> "12478_isPackListed"
+"12478_disallowToken" -> "12478_restricted"
+"12478__addPackListing" -> "12478__updateListedTokenTypes"
+"12478_cancelPackListing" -> "12478_isPackListed"
+"12478_changeListingDetail" -> "12478_isAllowedCurrency"
+"12478__updateListedTokenTypes" -> "12478__unregisterTokenAddress"
+"12478_addPackListing" -> "12478_isMultiNotListedOnPack"
+"12478_setTaxOnTokenTypeAsRational" -> "12478_restricted"
+"12478_purchasePackListing" -> "12478_userNotBanned"
+"12478_setTaxOnTokenTypeAsRational" -> "12478_isValidERC721"
+"12478_getPackFinalPrice" -> "12478_getPackTaxOnListing"
+"12478_addPackListing" -> "12478_isMultiNotListed"
+"12478__addListing" -> "12478__updateListedTokenTypes"
+"12478_cancelListing" -> "12478_userNotBanned"
+"12478_getOfferFinalPrice" -> "12478_getOfferDetail"
+"12478_cancelPackListing" -> "12478_isPackSellerOrAdmin"
+"12478_getFinalPrice" -> "12478_getTaxOnListing"
+"12478__fieldsValidation" -> "12478__isValidERC721"
+"12478_cancelPackListing" -> "12478__updateListedTokenTypes"
+"12478__acceptOfferListing" -> "12478__updateListedTokenTypes"
+"12478_initialize" -> "12478_initializer"
+"12478__isPackSellerOrAdmin" -> "12478_hasRole"
+"12478_addListing" -> "12478_fieldsValidation"
+"12478_purchaseListing" -> "12478_getTaxOnListing"
+"12478_setTaxOnTokenTypeAsPercent" -> "12478_isValidERC721"
+"12478_allowToken" -> "12478_isValidERC721"
+"12478__acceptOfferListing" -> "12478__clearOffers"
+"12478_initialize" -> "12478___AccessControl_init"
+"12478_changePackListingDetail" -> "12478_isPackSeller"
+"12478_setTaxOnTokenTypeAsPercent" -> "12478_restricted"
+"12478__checkRequirementsAndPerformOffer" -> "12478__isAllowedCurrency"
+"12478_addListing" -> "12478_isNotListed"
+"12478_addListing" -> "12478__addListing"
+"12478_addListing" -> "12478_userNotBanned"
+"12478_getFinalPrice" -> "12478_getSellerCurrency"
+"12478_getPackFinalPrice" -> "12478_getPackSellerPrice"
+"12478_acceptOfferListing" -> "12478_userNotBanned"
+"12478_cancelPackListing" -> "12478_userNotBanned"
+"12478_acceptOfferListing" -> "12478__acceptOfferListing"
+"12478_purchasePackListing" -> "12478_getPackTaxOnListing"
+"12478_getFinalPrice" -> "12478_getSellerPrice"
+"12478_setDefaultTaxAsPercent" -> "12478_restricted"
+"12478_cancelListing" -> "12478__clearOffers"
+"12478_setUserBan" -> "12478_restricted"
+"12478_changePackListingDetail" -> "12478_isValidTime"
+"12478_changePackListingDetail" -> "12478_userNotBanned"
+"12478__acceptOfferListing" -> "12478_getOfferTax"
+"12478_setTaxOnTokenType" -> "12478_restricted"
+"12478_acceptOfferListing" -> "12478_isSeller"
+"12478_setDefaultTax" -> "12478_restricted"
+"12478_cancelListing" -> "12478__updateListedTokenTypes"
+"12478_changePackListingDetail" -> "12478_isAllowedCurrency"
+"12478_getOfferTax" -> "12478_getOfferDetail"
+"12478_getTaxOnListing" -> "12478_getSellerPrice"
+"12478_initialize" -> "12478__setupRole"
+"12478_changeListingDetail" -> "12478_isValidTime"
+"12478_changeListingDetail" -> "12478_isSeller"
+"12478__fieldsValidation" -> "12478__isValidTime"
+"12478_setTaxOnTokenTypeAsPercent" -> "12478__setTaxOnTokenType"
+"12478_purchaseListing" -> "12478_userNotBanned"
+"12478_allowToken" -> "12478_restricted"
+"12478_addPackListing" -> "12478__addPackListing"
+"12478_getPackTaxOnListing" -> "12478_getPackSellerPrice"
+"12478__acceptOfferListing" -> "12478_getOfferFinalPrice"
+"12478_purchaseListing" -> "12478_getFinalPrice"
+"12478_getOfferFinalPrice" -> "12478_getOfferTax"
+"12478__updateListedTokenTypes" -> "12478__registerTokenAddress"
+"12478_setUserBans" -> "12478_restricted"
+"12478__acceptOfferListing" -> "12478__isAllowedCurrency"
+"12478_setTaxOnTokenType" -> "12478__setTaxOnTokenType"
+"12478_getPackFinalPrice" -> "12478_getPackSellerCurrency"
+"12478_changePackListingDetail" -> "12478_isPackListed"
+"12478_cancelOffer" -> "12478_userNotBanned"
+"12478_offerListing" -> "12478_getIsEnableOffering"
+"12478_cancelListing" -> "12478_isListed"
+"12478_purchasePackListing" -> "12478__updateListedTokenTypes"
+"12478__isSellerOrAdmin" -> "12478_hasRole"
+"12478_disallowCurrency" -> "12478_restricted"
+"12478_setTaxOnTokenTypeAsRational" -> "12478__setTaxOnTokenType"
+"12478_setDefaultTaxAsRational" -> "12478_restricted"
+"12478__fieldsValidation" -> "12478__isAllowedCurrency"
+"12478_offerListing" -> "12478__checkRequirementsAndPerformOffer"
+"12478_offerListing" -> "12478_userNotBanned"
+"12478_getListingIDsBySeller" -> "12478_getNumberOfListingsBySeller"
+}subgraph cluster_solidity {
+label = "[Solidity]"
+"keccak256(bytes)" 
+"require(bool,string)" 
+"require(bool)" 
+"12478__isPackSellerOrAdmin" -> "require(bool,string)"
+"12478__setTaxOnTokenType" -> "require(bool,string)"
+"12478__isSeller" -> "require(bool,string)"
+"12478__isAllowedCurrency" -> "require(bool,string)"
+"12478__isListedOnPack" -> "require(bool,string)"
+"12478__isSellerOrAdmin" -> "require(bool,string)"
+"12478__checkRequirementsAndPerformOffer" -> "require(bool,string)"
+"12478__isValidTime" -> "require(bool,string)"
+"12478__isValidERC721" -> "require(bool)"
+"307_grantRole" -> "require(bool,string)"
+"307_renounceRole" -> "require(bool,string)"
+"12478__isPackNotListed" -> "require(bool,string)"
+"12478_purchaseListing" -> "require(bool,string)"
+"12478__isPackSeller" -> "require(bool,string)"
+"12478_cancelOffer" -> "require(bool,string)"
+"12478__isNotListed" -> "require(bool,string)"
+"12478__tokenNotBanned" -> "require(bool,string)"
+"12478_slitherConstructorConstantVariables" -> "keccak256(bytes)"
+"12478__isPackListed" -> "require(bool,string)"
+"12478__isListed" -> "require(bool,string)"
+"12478_offerListing" -> "require(bool,string)"
+"12478__acceptOfferListing" -> "require(bool,string)"
+"12478__onlyNonContract" -> "require(bool,string)"
+"307_revokeRole" -> "require(bool,string)"
+"12478_purchasePackListing" -> "require(bool,string)"
+"12478_onERC721Received" -> "require(bool,string)"
+"12478__isNotListedOnPack" -> "require(bool,string)"
+}
+}

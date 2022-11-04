@@ -1,0 +1,69 @@
+strict digraph {
+subgraph cluster_12553_MockERC20 {
+label = "MockERC20"
+"12553_burnFrom" [label="burnFrom"]
+"12553_constructor" [label="constructor"]
+"12553_burnFrom" -> "12553__approve"
+"12553_burnFrom" -> "12553__msgSender"
+"12553_constructor" -> "12553_constructor"
+"12553_constructor" -> "12553_decimals"
+"12553_burnFrom" -> "12553_allowance"
+"12553_constructor" -> "12553__mint"
+"12553_burnFrom" -> "12553__burn"
+"12553_constructor" -> "12553_totalSupply"
+"12553_constructor" -> "12553__approve"
+}subgraph cluster_4876_IERC20 {
+label = "IERC20"
+"4876_totalSupply" [label="totalSupply"]
+"4876_approve" [label="approve"]
+"4876_allowance" [label="allowance"]
+"4876_transferFrom" [label="transferFrom"]
+"4876_transfer" [label="transfer"]
+"4876_balanceOf" [label="balanceOf"]
+}subgraph cluster_4798_ERC20 {
+label = "ERC20"
+"4798_decimals" [label="decimals"]
+"4798_transferFrom" [label="transferFrom"]
+"4798_transfer" [label="transfer"]
+"4798__transfer" [label="_transfer"]
+"4798_decreaseAllowance" [label="decreaseAllowance"]
+"4798_allowance" [label="allowance"]
+"4798__burn" [label="_burn"]
+"4798_totalSupply" [label="totalSupply"]
+"4798_balanceOf" [label="balanceOf"]
+"4798__setupDecimals" [label="_setupDecimals"]
+"4798__mint" [label="_mint"]
+"4798_constructor" [label="constructor"]
+"4798_approve" [label="approve"]
+"4798_name" [label="name"]
+"4798__approve" [label="_approve"]
+"4798__beforeTokenTransfer" [label="_beforeTokenTransfer"]
+"4798_symbol" [label="symbol"]
+"4798_increaseAllowance" [label="increaseAllowance"]
+"4798__burn" -> "4798__beforeTokenTransfer"
+"4798_transferFrom" -> "4798__transfer"
+"4798__mint" -> "4798__beforeTokenTransfer"
+"4798_approve" -> "4798__approve"
+"4798_decreaseAllowance" -> "4798__msgSender"
+"4798_transfer" -> "4798__msgSender"
+"4798_transferFrom" -> "4798__msgSender"
+"4798_decreaseAllowance" -> "4798__approve"
+"4798_transferFrom" -> "4798__approve"
+"4798__transfer" -> "4798__beforeTokenTransfer"
+"4798_increaseAllowance" -> "4798__msgSender"
+"4798_increaseAllowance" -> "4798__approve"
+"4798_approve" -> "4798__msgSender"
+"4798_transfer" -> "4798__transfer"
+}subgraph cluster_5015_Context {
+label = "Context"
+"5015__msgSender" [label="_msgSender"]
+"5015__msgData" [label="_msgData"]
+}subgraph cluster_solidity {
+label = "[Solidity]"
+"require(bool,string)" 
+"4798__transfer" -> "require(bool,string)"
+"4798__mint" -> "require(bool,string)"
+"4798__burn" -> "require(bool,string)"
+"4798__approve" -> "require(bool,string)"
+}
+}

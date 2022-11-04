@@ -1,0 +1,188 @@
+strict digraph {
+subgraph cluster_2080_ERC721Upgradeable {
+label = "ERC721Upgradeable"
+"2080__approve" [label="_approve"]
+"2080__mint" [label="_mint"]
+"2080_balanceOf" [label="balanceOf"]
+"2080__setBaseURI" [label="_setBaseURI"]
+"2080_symbol" [label="symbol"]
+"2080__exists" [label="_exists"]
+"2080__checkOnERC721Received" [label="_checkOnERC721Received"]
+"2080___ERC721_init" [label="__ERC721_init"]
+"2080_tokenByIndex" [label="tokenByIndex"]
+"2080_approve" [label="approve"]
+"2080_tokenOfOwnerByIndex" [label="tokenOfOwnerByIndex"]
+"2080_safeTransferFrom" [label="safeTransferFrom"]
+"2080_setApprovalForAll" [label="setApprovalForAll"]
+"2080__isApprovedOrOwner" [label="_isApprovedOrOwner"]
+"2080_getApproved" [label="getApproved"]
+"2080__safeTransfer" [label="_safeTransfer"]
+"2080_transferFrom" [label="transferFrom"]
+"2080_baseURI" [label="baseURI"]
+"2080__burn" [label="_burn"]
+"2080_isApprovedForAll" [label="isApprovedForAll"]
+"2080__setTokenURI" [label="_setTokenURI"]
+"2080_name" [label="name"]
+"2080__safeMint" [label="_safeMint"]
+"2080___ERC721_init_unchained" [label="__ERC721_init_unchained"]
+"2080__transfer" [label="_transfer"]
+"2080_totalSupply" [label="totalSupply"]
+"2080__beforeTokenTransfer" [label="_beforeTokenTransfer"]
+"2080_ownerOf" [label="ownerOf"]
+"2080_tokenURI" [label="tokenURI"]
+"2080_getApproved" -> "2080__exists"
+"2080__mint" -> "2080__beforeTokenTransfer"
+"2080_approve" -> "2080__msgSender"
+"2080___ERC721_init" -> "2080_initializer"
+"2080__transfer" -> "2080__beforeTokenTransfer"
+"2080___ERC721_init" -> "2080___ERC165_init_unchained"
+"2080__approve" -> "2080_ownerOf"
+"2080_approve" -> "2080_ownerOf"
+"2080_safeTransferFrom" -> "2080__safeTransfer"
+"2080__transfer" -> "2080_ownerOf"
+"2080_approve" -> "2080__approve"
+"2080__isApprovedOrOwner" -> "2080__exists"
+"2080__mint" -> "2080__exists"
+"2080__safeTransfer" -> "2080__checkOnERC721Received"
+"2080_safeTransferFrom" -> "2080__isApprovedOrOwner"
+"2080__safeMint" -> "2080__safeMint"
+"2080__transfer" -> "2080__approve"
+"2080_setApprovalForAll" -> "2080__msgSender"
+"2080___ERC721_init_unchained" -> "2080__registerInterface"
+"2080__safeMint" -> "2080__mint"
+"2080__burn" -> "2080_ownerOf"
+"2080__isApprovedOrOwner" -> "2080_isApprovedForAll"
+"2080_approve" -> "2080_isApprovedForAll"
+"2080__checkOnERC721Received" -> "2080__msgSender"
+"2080__isApprovedOrOwner" -> "2080_ownerOf"
+"2080___ERC721_init_unchained" -> "2080_initializer"
+"2080__isApprovedOrOwner" -> "2080_getApproved"
+"2080__safeMint" -> "2080__checkOnERC721Received"
+"2080__safeTransfer" -> "2080__transfer"
+"2080_tokenURI" -> "2080_baseURI"
+"2080___ERC721_init" -> "2080___ERC721_init_unchained"
+"2080__burn" -> "2080__beforeTokenTransfer"
+"2080_safeTransferFrom" -> "2080__msgSender"
+"2080_transferFrom" -> "2080__isApprovedOrOwner"
+"2080__burn" -> "2080__approve"
+"2080__setTokenURI" -> "2080__exists"
+"2080_safeTransferFrom" -> "2080_safeTransferFrom"
+"2080_transferFrom" -> "2080__transfer"
+"2080___ERC721_init" -> "2080___Context_init_unchained"
+"2080_transferFrom" -> "2080__msgSender"
+"2080_tokenURI" -> "2080__exists"
+}subgraph cluster_2561_ContextUpgradeable {
+label = "ContextUpgradeable"
+"2561___Context_init_unchained" [label="__Context_init_unchained"]
+"2561__msgSender" [label="_msgSender"]
+"2561__msgData" [label="_msgData"]
+"2561___Context_init" [label="__Context_init"]
+"2561___Context_init" -> "2561___Context_init_unchained"
+"2561___Context_init_unchained" -> "2561_initializer"
+"2561___Context_init" -> "2561_initializer"
+}subgraph cluster_2272_IERC721Upgradeable {
+label = "IERC721Upgradeable"
+"2272_balanceOf" [label="balanceOf"]
+"2272_approve" [label="approve"]
+"2272_isApprovedForAll" [label="isApprovedForAll"]
+"2272_getApproved" [label="getApproved"]
+"2272_ownerOf" [label="ownerOf"]
+"2272_safeTransferFrom" [label="safeTransferFrom"]
+"2272_transferFrom" [label="transferFrom"]
+"2272_setApprovalForAll" [label="setApprovalForAll"]
+}subgraph cluster_394_IERC165Upgradeable {
+label = "IERC165Upgradeable"
+"394_supportsInterface" [label="supportsInterface"]
+}subgraph cluster_815_Initializable {
+label = "Initializable"
+"815__isConstructor" [label="_isConstructor"]
+}subgraph cluster_307_AccessControlUpgradeable {
+label = "AccessControlUpgradeable"
+"307_getRoleAdmin" [label="getRoleAdmin"]
+"307_revokeRole" [label="revokeRole"]
+"307_renounceRole" [label="renounceRole"]
+"307__setupRole" [label="_setupRole"]
+"307__setRoleAdmin" [label="_setRoleAdmin"]
+"307___AccessControl_init_unchained" [label="__AccessControl_init_unchained"]
+"307_grantRole" [label="grantRole"]
+"307_getRoleMember" [label="getRoleMember"]
+"307__revokeRole" [label="_revokeRole"]
+"307__grantRole" [label="_grantRole"]
+"307_getRoleMemberCount" [label="getRoleMemberCount"]
+"307_hasRole" [label="hasRole"]
+"307___AccessControl_init" [label="__AccessControl_init"]
+"307___AccessControl_init" -> "307___AccessControl_init_unchained"
+"307___AccessControl_init_unchained" -> "307_initializer"
+"307___AccessControl_init" -> "307_initializer"
+"307_grantRole" -> "307_hasRole"
+"307_revokeRole" -> "307_hasRole"
+"307__revokeRole" -> "307__msgSender"
+"307_grantRole" -> "307__grantRole"
+"307___AccessControl_init" -> "307___Context_init_unchained"
+"307_revokeRole" -> "307__revokeRole"
+"307_renounceRole" -> "307__revokeRole"
+"307__setupRole" -> "307__grantRole"
+"307__grantRole" -> "307__msgSender"
+"307_renounceRole" -> "307__msgSender"
+"307_grantRole" -> "307__msgSender"
+"307_revokeRole" -> "307__msgSender"
+}subgraph cluster_2138_IERC721MetadataUpgradeable {
+label = "IERC721MetadataUpgradeable"
+"2138_name" [label="name"]
+"2138_symbol" [label="symbol"]
+"2138_tokenURI" [label="tokenURI"]
+}subgraph cluster_12635_MockERC721 {
+label = "MockERC721"
+"12635_slitherConstructorConstantVariables" [label="slitherConstructorConstantVariables"]
+"12635_mintTokenById" [label="mintTokenById"]
+"12635_initialize" [label="initialize"]
+"12635_mintToken" [label="mintToken"]
+"12635_initialize" -> "12635___AccessControl_init_unchained"
+"12635_initialize" -> "12635___ERC721_init"
+"12635_initialize" -> "12635__setupRole"
+"12635_mintTokenById" -> "12635__mint"
+"12635_initialize" -> "12635_initializer"
+"12635_mintToken" -> "12635__mint"
+}subgraph cluster_382_ERC165Upgradeable {
+label = "ERC165Upgradeable"
+"382___ERC165_init" [label="__ERC165_init"]
+"382_supportsInterface" [label="supportsInterface"]
+"382__registerInterface" [label="_registerInterface"]
+"382___ERC165_init_unchained" [label="__ERC165_init_unchained"]
+"382___ERC165_init" -> "382_initializer"
+"382___ERC165_init_unchained" -> "382_initializer"
+"382___ERC165_init_unchained" -> "382__registerInterface"
+"382___ERC165_init" -> "382___ERC165_init_unchained"
+}subgraph cluster_2111_IERC721EnumerableUpgradeable {
+label = "IERC721EnumerableUpgradeable"
+"2111_totalSupply" [label="totalSupply"]
+"2111_tokenByIndex" [label="tokenByIndex"]
+"2111_tokenOfOwnerByIndex" [label="tokenOfOwnerByIndex"]
+}subgraph cluster_solidity {
+label = "[Solidity]"
+"abi.decode()" 
+"require(bool,string)" 
+"abi.encodePacked()" 
+"abi.encodeWithSelector()" 
+"2080__isApprovedOrOwner" -> "require(bool,string)"
+"307_grantRole" -> "require(bool,string)"
+"2080_tokenURI" -> "require(bool,string)"
+"307_renounceRole" -> "require(bool,string)"
+"2080_balanceOf" -> "require(bool,string)"
+"382__registerInterface" -> "require(bool,string)"
+"2080_setApprovalForAll" -> "require(bool,string)"
+"2080_transferFrom" -> "require(bool,string)"
+"2080__checkOnERC721Received" -> "abi.encodeWithSelector()"
+"2080_approve" -> "require(bool,string)"
+"2080_tokenURI" -> "abi.encodePacked()"
+"2080__transfer" -> "require(bool,string)"
+"2080__safeMint" -> "require(bool,string)"
+"2080__checkOnERC721Received" -> "abi.decode()"
+"2080__safeTransfer" -> "require(bool,string)"
+"2080_safeTransferFrom" -> "require(bool,string)"
+"2080__setTokenURI" -> "require(bool,string)"
+"307_revokeRole" -> "require(bool,string)"
+"2080_getApproved" -> "require(bool,string)"
+"2080__mint" -> "require(bool,string)"
+}
+}

@@ -11,7 +11,8 @@
     "deploy:dev:tpolygon": "NODE_ENV=dev hardhat run --network tpolygon",
     "verify:local": "NODE_ENV=local hardhat verify --network tbsc",
     "verify:dev": "NODE_ENV=dev hardhat verify --network tbsc",
-    "verify:dev:tpolygon": "NODE_ENV=dev hardhat verify --network tpolygon"
+    "verify:dev:tpolygon": "NODE_ENV=dev hardhat verify --network tpolygon",
+    "slither:analyze": "slither contracts/NFTMarketplace.sol --exclude-low"
   },
   "devDependencies": {
     "@ethersproject/abi": "^5.4.7",
